@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    color: white;
+    caret-color: transparent;
+}
+
+.vsi13538 {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 0.8rem;
+    padding: 0.6rem 0.6rem;
+    margin: 5rem auto;
+    width: 28%;
+    background-color: black;
+}
+
+.vsi13538::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow,orange, red);
+    z-index: -1;
+    border-radius: 0.8rem;
+}
+
+
+.vsi13538 header {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 2.5rem;
+}
+
+#board li {
+    list-style: none;
+    font-size: 3.45rem;
+    text-align: center;
+    padding: 0.2rem 0.2rem;
+    width: 4.37rem;
+    height: 4.37rem;
+    color: darkgray;
+    border-radius: 0.4rem;
+    border: 1px solid white;
+    margin: 0.4rem 0.4rem;
+}
+
+#board li:hover,
+#reset:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    color: black;
+}
+
+#reset {
+    text-align: center;
+    margin: 0.6rem auto;
+    background-color: black;
+    color: darkgrey;
+    padding: 0.6rem 0.2rem;
+    border: 1px solid white;
+    border-radius: 0.4rem;
+    width: 17.5rem;
+    font-size: 1rem;
+}
+
+.o {
+    color: green !important;
+}
+
+.x {
+    color: red !important;
+}
+
+@media(max-width: 1088px){
+    .vsi13538{
+        width: 40%;
+    }
+}
+
+@media(max-width: 770px){
+    .vsi13538{
+        width: 52%;
+    }
+}
+
+@media(max-width: 586px){
+    .vsi13538{
+        width: 64%;
+    }
+}
+
+@media(max-width: 512px){
+    .vsi13538{
+        width: 64%;
+        border: 1px solid ;
+    }
+
+    .vsi13538 header {
+        font-size: 2rem;
+    }
+
+    #board li {
+        font-size: 3rem;
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+
+    #reset {
+        font-size: 1rem;
+    }
+
+
+}
