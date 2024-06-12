@@ -104,7 +104,6 @@ body {
 @media(max-width: 512px){
     .vsi13538{
         width: 64%;
-        border: 1px solid ;
     }
 
     .vsi13538 header {
@@ -120,6 +119,26 @@ body {
     #reset {
         font-size: 1rem;
     }
+}
 
+@media(max-width: 432px){
+    .vsi13538{
+        width: 76%;
+        margin-top: 16rem;
+    }
 
+    .vsi13538 header {
+        font-size: 2rem;
+    }
+
+    #board li {
+        font-size: 3rem;
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+
+    #reset {
+        font-size: 1rem;
+        width: 90%;
+    }
 }
